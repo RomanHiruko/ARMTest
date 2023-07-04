@@ -4,10 +4,6 @@ import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import web.elements.Button;
 import web.elements.TextBox;
 
@@ -22,8 +18,7 @@ public class LoginPage extends BasePage {
     private SelenideElement passwordTextBoxClick = $x("//input[@name='password']/../..");
     private SelenideElement continueButton = $x("//button[@type='submit']");
 
-    public LoginPage(){
-        super();
+    public LoginPage() {
         Selenide.open(URL);
     }
 

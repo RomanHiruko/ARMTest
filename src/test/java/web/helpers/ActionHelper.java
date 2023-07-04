@@ -11,10 +11,6 @@ public class ActionHelper {
     private static Logger logger = LogManager.getLogger(ActionHelper.class);
     protected static Actions actions;
 
-    public static void init(WebDriver driver) {
-        actions = new Actions(driver);
-    }
-
     public static void moveToElement(WebElement webElement) {
         actions.moveToElement(webElement).perform();
     }

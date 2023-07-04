@@ -3,14 +3,16 @@ package web.elements;
 import com.codeborne.selenide.SelenideElement;
 
 public class BaseElement {
-    protected SelenideElement webElement;
+    protected SelenideElement selenideElement;
 
-    public BaseElement(SelenideElement webElement) {
-        this.webElement = webElement;
+    public SelenideElement getSelenideElement(){
+        return selenideElement;
     }
+    public BaseElement(SelenideElement selenideElement) {
+        this.selenideElement = selenideElement;
+    }
+
     public boolean isDisplayed() {
-        //............................................................................................костыль
-        webElement.click();
-        return webElement.isDisplayed();
+        return selenideElement.isDisplayed();
     }
 }

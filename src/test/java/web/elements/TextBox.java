@@ -8,10 +8,10 @@ public class TextBox extends BaseElement {
     }
 
     public void click() {
-        webElement.click();
+        selenideElement.click();
     }
 
     public void setValue(String value) {
-        webElement.sendKeys(value);
+        selenideElement.sendKeys(value);
     }
 }

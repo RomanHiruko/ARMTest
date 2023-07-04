@@ -8,6 +8,6 @@ public class Button extends BaseElement {
     }
 
     public void click() {
-        webElement.click();
+        selenideElement.click();
     }
 }
