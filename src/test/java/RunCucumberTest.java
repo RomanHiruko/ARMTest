@@ -8,9 +8,10 @@ import org.junit.runner.RunWith;
 
 // Опции для запуска сценариев
 @CucumberOptions(
+        plugin = {"io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm"},
         // Список папок с feature файлами - фичи/сценарии
         features = {"src/test/resources/features"},
-        // Спиcок пакетов с steps файлами - шаги
+        // Список пакетов с steps файлами - шаги
         glue = {"steps", "hooks"},
 
         stepNotifications = true
