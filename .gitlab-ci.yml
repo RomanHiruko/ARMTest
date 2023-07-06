@@ -13,4 +13,4 @@ UI tests with Allure:
     - mvn allure:report
   artifacts:
     paths:
-      - allure-report/*
+      - target/site/allure-maven-plugin/*
