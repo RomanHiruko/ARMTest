@@ -7,6 +7,13 @@
     <name>Archetype - ARMTest</name>
     <url>http://maven.apache.org</url>
 
+    <repositories>
+        <repository>
+            <id>allure</id>
+            <url>https://dl.bintray.com/qameta/maven</url>
+        </repository>
+    </repositories>
+
     <!-- Параметры -->
     <properties>
         <source>17</source>
