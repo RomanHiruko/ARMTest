@@ -13,4 +13,4 @@ UI tests with Allure:
     - mvn allure:report
   artifacts:
     paths:
-      - target/allure-results/*
+      - allure-report/*
