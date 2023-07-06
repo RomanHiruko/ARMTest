@@ -10,7 +10,7 @@ UI tests with Allure:
   stage: test
   script:
     - mvn clean test
-  after script:
+  after_script:
     - mvn allure:report
   artifacts:
     when: always
