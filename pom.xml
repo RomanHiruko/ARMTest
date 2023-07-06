@@ -9,6 +9,10 @@
 
     <repositories>
         <repository>
+            <id>aspectj</id>
+            <url>https://repo.eclipse.org/content/repositories/aspectj/</url>
+        </repository>
+        <repository>
             <id>allure</id>
             <url>https://dl.bintray.com/qameta/maven</url>
         </repository>
