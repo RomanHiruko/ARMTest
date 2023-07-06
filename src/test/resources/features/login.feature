@@ -15,4 +15,3 @@
     Примеры:
       | login             | password |
       | admin@company.org | password |
-
