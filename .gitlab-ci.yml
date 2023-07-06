@@ -10,7 +10,9 @@ UI tests with Allure:
   stage: test
   script:
     - mvn clean test
+  after script:
     - mvn allure:report
   artifacts:
+    when: always
     paths:
       - target/site/allure-maven-plugin/*
