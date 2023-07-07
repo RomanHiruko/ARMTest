@@ -1,4 +1,4 @@
-package steps;
+package ui.steps;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
@@ -8,9 +8,7 @@ import io.cucumber.java.ru.Тогда;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import web.pages.LoginPage;
+import ui.web.pages.LoginPage;
 
 import static com.codeborne.selenide.Selenide.Wait;
 
@@ -21,8 +19,8 @@ public class LoginPageSteps {
 
     @Дано("Открыта страница \"Страница авторизации\"")
     public void openLoginPage() {
-        Configuration.pageLoadTimeout = 60000;
-        Configuration.timeout = 60000;
+        Configuration.pageLoadTimeout = 3000;
+        Configuration.timeout = 3000;
         loginPage = new LoginPage();
         logger.info("Открыта страница авторизации");
     }

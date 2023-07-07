@@ -1,4 +1,4 @@
-package web.pages;
+package ui.web.pages;
 
 import com.codeborne.selenide.WebDriverRunner;
 

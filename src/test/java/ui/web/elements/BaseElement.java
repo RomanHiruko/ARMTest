@@ -1,4 +1,4 @@
-package web.elements;
+package ui.web.elements;
 
 import com.codeborne.selenide.SelenideElement;
 

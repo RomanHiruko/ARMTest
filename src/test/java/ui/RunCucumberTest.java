@@ -1,3 +1,5 @@
+package ui;
+
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -10,9 +12,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"io.qameta.allure.cucumber5jvm.AllureCucumber5Jvm"},
         // Список папок с feature файлами - фичи/сценарии
-        features = {"src/test/resources/features"},
-        // Список пакетов с steps файлами - шаги
-        glue = {"steps", "hooks"},
+        features = {"src/test/resources/features/ui"},
+        // Список пакетов с ui.steps файлами - шаги
+        glue = {"ui.steps", "ui.hooks"},
 
         stepNotifications = true
 )

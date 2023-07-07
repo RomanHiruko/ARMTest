@@ -108,7 +108,7 @@
                 <configuration>
                     <testFailureIgnore>false</testFailureIgnore>
                     <includes>
-                        <include>**/RunCucumberTest.java</include>
+                        <include>**/ui.RunCucumberTest.java</include>
                     </includes>
                     <argLine>
                         -Dfile.encoding=UTF-8

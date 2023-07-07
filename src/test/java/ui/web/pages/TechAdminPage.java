@@ -1,10 +1,9 @@
-package web.pages;
+package ui.web.pages;
 
 import com.codeborne.selenide.SelenideElement;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import web.elements.BaseElement;
-import web.elements.Button;
+import ui.web.elements.BaseElement;
 
 import static com.codeborne.selenide.Selenide.$x;
 
