@@ -15,4 +15,3 @@
     Примеры:
       | login             | password | page |
       | admin@company.org | password | Техническое администрирование |
-      | testovy@mail.pr | password | Все заявки |
