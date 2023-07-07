@@ -3,14 +3,25 @@ image: maven:3.8-openjdk-11
 default:
   tags:
     - shelllocal
+
 stages:
-  - test
+  - tests
+  - allure
+
 
 UI tests with Allure:
-  stage: test
+  stage: tests
+  allow_failure: true
   script:
     - mvn clean test
-  after_script:
+  artifacts:
+    when: always
+    paths:
+      - target/allure-results
+
+Allure report:
+  stage: allure
+  script:
     - mvn allure:report
   artifacts:
     when: always
