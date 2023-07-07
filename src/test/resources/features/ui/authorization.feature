@@ -26,4 +26,4 @@
     И Открыта страница "Все заявки"
     Примеры:
       | login        | password |
-      | mail@mail.pr | password |
+      | testovy@mail.pr | password |
